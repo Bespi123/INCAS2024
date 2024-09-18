@@ -28,5 +28,7 @@ f  = -Jrw^(-1)*c*sign(w);
 
 F_x = (a2*b1-a1*b2)*w+(a1+b2)*w_dot-b2*f;
 G_x = a2*c1;
-u_eq = (-F_x + ddot_y_d + lambda * dot_e + alpha * s + beta * tanh(s / epsilon)) / G_x;
+%u_eq = (-F_x + ddot_y_d + lambda * dot_e + alpha * s + beta * tanh(s / epsilon)) / G_x;
+%u_eq = (-F_x + ddot_y_d + lambda * dot_e - beta * sign(s)) / G_x;
+u_eq = (F_x - ddot_y_d - lambda * dot_e - beta * sign(s)) / G_x;
 end

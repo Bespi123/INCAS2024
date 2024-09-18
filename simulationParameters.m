@@ -30,8 +30,8 @@ esti.gamma = 1;
 %%% Permanent excitation values
 % esti.a  = 2;
 %esti.nu = 2;
-esti.a  = 0.3;
-esti.nu = 0.3;
+esti.a  = 0.5;
+esti.nu = 0.5;
 
 %%%Adaptive PID gains
 adap.lambda = 5;
@@ -39,24 +39,24 @@ adap.lambda = 5;
 adap.n = 20;
 adap.alpha = 3;
 adap.beta = 5;
-adap.epsilon = 0.1;
+adap.epsilon = 0.001;
 
 %%%Adaptive PID gains
-adap.lambda = 5E6;
+adap.lambda =5;
 %x.n = 20*1E-3;
-adap.n = 20E6;
-adap.alpha = 3E6;
-adap.beta = 5E6;
-adap.epsilon = 0.1E6;
+adap.n = 1;
+adap.alpha = 5;
+adap.beta = 5;
+adap.epsilon = 0.1;
 
 
 %%%Initial Conditions
-% x.kd_init = 3.096305095968147e-05;
-% x.ki_init = 0.001083608847320;
-% x.kp_init = 7.034383411703327e-04;
 adap.kd_init = 0;
-adap.ki_init = 0.0107348710799452;
-adap.kp_init = 0.0125748602658066;
+adap.ki_init = 0;
+adap.kp_init = 0;
+%adap.kd_init = 0;
+%adap.ki_init = 0.0107348710799452;
+%adap.kp_init = 0.0125748602658066;
 
 
 % Parámetros iniciales del controlador adaptativo
