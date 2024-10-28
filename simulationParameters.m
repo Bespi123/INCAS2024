@@ -50,10 +50,6 @@ adap.epsilon = 0.1;
 adap.kd_init = 0;
 adap.ki_init = 0;
 adap.kp_init = 0;
-%adap.kd_init = 0;
-%adap.ki_init = 0.0107348710799452;
-%adap.kp_init = 0.0125748602658066;
-
 
 % Parámetros iniciales del controlador adaptativo
 Kp_init = 1;    % Ganancia proporcional inicial
