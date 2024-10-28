@@ -1,4 +1,4 @@
-function w_d = compute_omega_d_T(entr)
+unction w_d = compute_omega_d_T(entr)
     a  = entr(1);
     nu = entr(2);
     t  = entr(3);

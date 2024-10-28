@@ -17,8 +17,6 @@ motor.R  = 1.23424;      %R
 motor.ke = 0.00966471;   %ke
 
 %%Initial conditions
-% init.w_rw = -500;
-% init.current = 0.15-0.025; 
 init.w_rw = 0;
 init.current = 0; 
 
@@ -35,7 +33,6 @@ esti.nu = 0.3;
 
 %%%Adaptive PID gains
 adap.lambda = 5;
-%x.n = 20*1E-3;
 adap.n = 20;
 adap.alpha = 3;
 adap.beta = 5;
@@ -43,7 +40,6 @@ adap.epsilon = 0.1;
 
 %%%Adaptive PID gains
 adap.lambda = 5E6;
-%x.n = 20*1E-3;
 adap.n = 20E6;
 adap.alpha = 3E6;
 adap.beta = 5E6;
