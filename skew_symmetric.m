@@ -19,8 +19,8 @@ function S = skew_symmetric(omega)
 
     % Construct the skew-symmetric matrix
     S = [
-        0,     -omega3,  omega2;
-        omega3, 0,      -omega1;
-        -omega2, omega1, 0
-    ];
+                 0, -omega3,   omega2;
+            omega3,       0,  -omega1;
+           -omega2,  omega1,        0
+        ];
 end
